@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bulb{
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn.vectorstock.com/i/1000v/70/44/3d-realistic-off-light-bulb-icon-closeup-vector-27407044.jpg" alt="" id="bulb">
+</body>
+<script>
+    var a= document.getElementById("bulb");
+    a.addEventListener("mouseover",()=>{
+        a.src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940171g57vp25a8k.png";
+    });
+    a.addEventListener("mouseout",()=>{
+        a.src="https://cdn.vectorstock.com/i/1000v/70/44/3d-realistic-off-light-bulb-icon-closeup-vector-27407044.jpg";
+    });
+</script>
+</html>
