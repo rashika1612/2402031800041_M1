@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p id="result">
+        <p id="result"></p>
             <script>
-                let marks=prompt("Enter your name:");
-                if (marks>=70)
-                document.getElementById("result")
+                let marks=prompt("Enter your marks:");
+                if (marks>=40)
+                document.getElementById("result").innerHTML="Pass";
+            else
+            document.getElementById("result").innerHTML="Fail";
             </script>
-        </p>
     </body>
 </html>

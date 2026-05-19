@@ -1,0 +1,397 @@
+body{
+    background:darkgray;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1{
+    margin-top: 100px;
+    font-size: 60px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero{
+    height: 100vh;
+    background-image: url(https://images.openai.com/static-rsc-4/0hqnAn7-PpdAAK0Bf7FXf59cfX-DUXH1kWSdtpJ6Bix7UE7XI-T_An0jdsuQ1t_egNEUTZS29_klhnznvzxqCUwc6xQNdkWYI06CyqsGIuN-GcLYGQW8GSegzIIVZB7SbmeF1X0wUqpzpidoPkyW6fn5YaR4b9_l_R8BuUmahZSqJv4aqfhDmKMcyTI-qdyn?purpose=fullsize);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero h1{
+    font-size: 70px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 600;
+    transform: translateY(-60px);
+    margin-top: -120px;
+}
+.hero h1 span{
+    color: #D2042D;
+}
+button{
+    padding: 15px 45px;
+    border: none;
+    background: red;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow:0px 0px 20px #D2042D;
+}
+button:hover{
+    background: white;
+    color: red;
+}
+nav{
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+nav h2{
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+nav ul li{
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+nav ul li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #D2042D;
+    transition: 0.3s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+nav ul li:hover{
+    color:red;
+}
+footer{
+    background: #0a0a0a;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+footer h2{
+    font-size: 40px;
+    color:#D2042D;
+    margin-bottom: 15px;
+}
+footer p{
+    color: #aaa;
+    margin: 10px 0;
+}
+.footer-links{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-links a:hover{
+    color: #D2042D;
+}
+.copyright{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.programs{
+    padding: 100px 50px;
+    background:#111;
+    text-align:center;
+}
+.programs h2{
+     font-size:50px;
+    color:#D2042D;
+    margin-bottom:50px;
+}
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.card{
+    background:#1a1a1a;
+    width:300px;
+    padding:50px 30px;
+    border-radius:12px;
+    transition:0.3s;
+}
+.card:hover{
+     transform:translateY(-10px);
+    background:#D2042D;
+}
+@media(max-width:768px){
+    .hero h1{
+        font-size:45px;
+    }
+    nav{
+        padding:20px;
+    }
+    nav ul{
+        gap:15px;
+    }
+    .footer-links{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+.trainers{
+    padding:100px 50px;
+    background:black;
+    text-align:center;
+}
+.trainers h2{
+    color:#D2042D;
+    font-size:50px;
+    margin-bottom:50px;
+}
+.trainer-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.trainer-card {
+    background:#111;
+    padding:20px;
+    border-radius:12px;
+    width:320px;
+    transition:0.3s;
+}
+.trainer-card:hover{
+    transform:translateY(-10px);
+}
+.trainer-card img{
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius:12px;
+}
+.card:hover,
+.plan:hover,
+.trainer-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0px 0px 20px #D2042D;
+}
+.plans{
+    padding:100px 50px;
+
+    background:#0a0a0a;
+
+    text-align:center;
+}
+
+.plans h2{
+    font-size:55px;
+
+    color:#D2042D;
+
+    margin-bottom:60px;
+}
+
+.plan-box{
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.plan-card{
+    background:#111;
+
+    width:320px;
+
+    padding:40px 30px;
+
+    border-radius:15px;
+
+    transition:0.3s;
+
+    border:1px solid #222;
+}
+
+.plan-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0px 0px 25px #D2042D;
+}
+
+.plan-card h3{
+    font-size:30px;
+
+    color:white;
+
+    margin-bottom:20px;
+}
+
+.plan-card h1{
+    font-size:60px;
+
+    color:#D2042D;
+
+    margin-bottom:25px;
+}
+
+.plan-card p{
+    color:#ccc;
+
+    margin:15px 0;
+
+    font-size:18px;
+}
+
+.plan-card button{
+    margin-top:25px;
+
+    padding:14px 35px;
+
+    border:none;
+
+    background:#D2042D;
+
+    color:white;
+
+    font-size:17px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.plan-card button:hover{
+    background:white;
+
+    color:#D2042D;
+}
+
+.premium{
+    transform:scale(1.05);
+
+    border:1px solid #D2042D;
+}
+.contact{
+    padding:100px 20px;
+
+    background:black;
+
+    text-align:center;
+}
+
+.contact h2{
+    font-size:55px;
+
+    color:#D2042D;
+
+    margin-bottom:50px;
+}
+
+form{
+    max-width:700px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+form input,
+form textarea{
+    padding:18px;
+
+    background:#111;
+
+    border:1px solid #222;
+
+    color:white;
+
+    border-radius:10px;
+
+    font-size:17px;
+}
+
+form textarea{
+    height:150px;
+
+    resize:none;
+}
+
+form button{
+    padding:16px;
+
+    background:#D2042D;
+
+    border:none;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+form button:hover{
+    background:white;
+
+    color:#D2042D;
+}
+html{
+    scroll-behavior:smooth;
+}
